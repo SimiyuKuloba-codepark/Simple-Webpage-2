@@ -1,0 +1,241 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES*/
+/* colors & font type*/
+:root{
+    --primary-color: #93cb52 ;
+    --secondary-color: #162900;
+    --primary-font: 'Roboto', sans-serif;;
+}
+
+/* OVERAL DISPLAY */
+html, body{
+    font-family: var(--primary-font);
+    line-height: 1.4;
+}
+
+/* ELEMENTS */
+/* anchor links */
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* large heading */
+.l-heading{
+    font-size: 2.5rem;
+}
+
+/* paragraphs */
+p{
+    margin: .75rem 0rem;
+}
+
+li{
+    list-style: none;
+}
+
+/* LAYOUT STRUCTURE */
+/* padding y-axis */
+.py-1{padding: 10px 0;}
+.py-2{padding: 20px 0;}
+.py-3{padding: 30px 0;}
+
+/* padding x-axis */
+.px-1{padding: 0 10px;}
+.px-2{padding: 0 20px;}
+.px-3{padding: 0 30px;}
+
+/* TEXT */
+.primary-font{
+    color: var(--primary-color);
+}
+
+/* BUTTONS */
+/* basic button */
+.btn{
+    display: inline-block !important;
+    font-size: 1rem;
+    color: #fff ;
+    background: var(--primary-color) ;
+    padding: .75rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius:.4rem ;
+}
+
+.btn:hover{
+    background: var(--secondary-color) ;
+    color: #fff ;
+}
+
+/* styled button
+button should use the above .btn class also alongside to format the padding, border etc
+*/
+.btn-dark{
+    background: #000 ;
+    color:#fff ;
+}
+
+/* BACKGROUND COLORS */
+.bg-dark{
+    background: #222;
+    color: #fff;
+}
+
+.bg-light{
+    background: #fff;
+    color: #000;
+}
+
+.bg-primary{
+    background: var(--primary-color);
+    color:#fff ;
+}
+
+/* HEADER */
+/* navbar */
+#navbar{
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.container ul{
+    display: flex;
+}
+
+.container ul li a{
+    padding: 1.5rem;
+}
+
+.container ul li a:hover{
+    background: var(--primary-color);
+}
+
+/* showcase */
+#showcase{
+    background: url('/ledger/img/showcase.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* SECTIONS */
+/* what */
+#what{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+#what .content{
+    display: flex;
+}
+
+#what .content .box{
+    padding: 0rem 3rem;
+}
+
+/* we */
+#we{
+    display: flex;
+}
+
+#we div{
+    flex: 1;
+}
+
+#we .image{
+    background: url('/ledger/img/people.jpg') no-repeat center center/cover;
+}
+
+#we .content{
+    padding: 2rem 3rem;
+}
+
+/* clients */
+#clients{
+    text-align: center;
+}
+
+#clients .icons{
+    display: flex;
+}
+
+#clients .icons img{
+    margin: auto;
+    width: 8rem;
+}
+
+/* contact */
+#contact{
+    display: flex;
+}
+
+#contact .map, #contact .content{
+    flex: 1;
+}
+
+#contact .map{
+    background: url('/ledger/img/contact.jpg') no-repeat center center/cover;
+}
+
+#contact .content{
+    padding: 1rem 2rem;
+}
+
+#contact .content .form-content{
+    margin-bottom: 1rem;
+}
+
+#contact .content label{
+    display: block;
+}
+
+#contact .content input{
+    padding: .5rem 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#contact .content input:focus,
+#contact .content textarea:focus{
+    border: 1px solid #333;
+}
+
+#contact .content textarea{
+    width: 100%;
+    height: 7rem;
+    border: none;
+    outline: none;
+}
+
+/*footer  */
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }

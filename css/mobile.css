@@ -1,0 +1,67 @@
+/* navbar */
+.container{
+    height: 15vh !important;
+    flex-direction: column;
+    justify-content: space-around !important;
+}
+
+.container ul li a{
+    padding: 1rem;
+}
+
+.container ul li a:hover{
+    background: rgba(51, 51, 51, 0) !important;
+    color:  #93cb52;
+}
+
+/* showcase */
+#showcase{
+    height: 60vh !important;
+}
+
+#what .content{
+    flex-direction: column;
+}
+
+#what .content .box:nth-child(2){
+    border-bottom: #93cb52 dotted 1px;
+    border-top: #93cb52 dotted 1px;
+}
+
+#what .content .box h3{
+    padding-top: 1rem;
+}
+
+/* we */
+#we{
+    display: block !important;
+}
+
+#we .image{
+    display: none;
+}
+
+#we .content{
+    padding: 1rem !important;
+}
+
+/* clients */
+#clients .icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#clients .icons img{
+    width: 4rem !important;
+}
+
+
+/* contact */
+#contact{
+    display: block !important;
+}
+
+#contact .map{
+    height: 600px !important;
+}
+
